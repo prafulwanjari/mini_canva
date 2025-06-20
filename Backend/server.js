@@ -12,16 +12,16 @@ dotenv.config()
 
 
 
-if(process.env.NODE_ENV==='production'){
+if (process.env.NODE_ENV === 'production') {
     app.use(cors({
-        origin:'http://localhost:5173',
-        credentials:true
-    }))
-}else{
-   app.use(cors({
-     origin:'https://minicanvaproject.netlify.app',
-        credentials:true
-    })) 
+        origin: 'https://minicanvaproject.netlify.app',
+        credentials: true
+    }));
+} else {
+    app.use(cors({
+        origin: 'http://localhost:5173',
+        credentials: true
+    }));
 }
 
 app.use(express.json())
