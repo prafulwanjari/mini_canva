@@ -1,5 +1,5 @@
 import axios from 'axios'
-const local_api= 'http://localhost:5000'
+const local_api= 'https://mini-canva.onrender.com'
 const production_api=''
 
 const token=localStorage.getItem('canva_token')
