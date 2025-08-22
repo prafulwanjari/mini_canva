@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../Images/logo.jpg'
-import profile from '../Images/DSC_0017 (1).png'
 import { Link,Outlet,useLocation, useNavigate } from 'react-router-dom'
 import {FaHome} from 'react-icons/fa'
 import {BsFolder,BsGrid1X2} from 'react-icons/bs'
@@ -14,6 +12,7 @@ export default function Layout() {
     const navigate=useNavigate()
     const [show, setShow] = useState(false)
     const {pathname}=useLocation()
+    console.log(pathname)
 
 
  const create = (e) => {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsTrash } from 'react-icons/bs'
 import Element from './Element'
+import { useId } from 'react'
 
 export default function CreateComponent({ info, current_component, removeComponent }) {
     const randValue = Math.floor(Math.random() * 100)
@@ -27,7 +28,7 @@ export default function CreateComponent({ info, current_component, removeCompone
     }
 
     if (info.name === 'shape' && info.type === 'rect') {
-        html = <div id={randValue} onClick={() => info.setCurrentComponent(info)}
+        html = <div id={useId} onClick={() => info.setCurrentComponent(info)}
             style={{
                 width: info.width + 'px',
                 height: info.height + 'px',

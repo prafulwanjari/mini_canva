@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../Images/logo.jpg'
 import {IoMdClose} from 'react-icons/io'
 import {AiOutlineGold, AiOutlineGoogle} from 'react-icons/ai'
 import { FaFacebookF } from "react-icons/fa";
@@ -8,7 +7,7 @@ import toast from 'react-hot-toast';
 
 
 
-export default function index() {
+export default function Index() {
   const [type,setType]=useState('')
   const [show ,setShow]=useState(false)
   const [loader,setLoader]=useState(false)

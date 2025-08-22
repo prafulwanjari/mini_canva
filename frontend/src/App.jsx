@@ -1,9 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import {createBrowserRouter,RouterProvider,Navigate} from 'react-router-dom' 
-import Index from './Pages/Index'
+import Index from '../src/Pages/Index'
 import Layout from './Pages/Layout'
 import Home from './components/Home'
 import Templates from './components/Templates'
